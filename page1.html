@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// loop to print patteran 
+
+//  for(let i=1;i<=5;i++){
+//     for(let j=i;j<=5;j++){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+//  }
+
+
+//  for(let i=5; i>=1;i--){
+//     for(let j=i;j<=5;j++){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+//  }
+
+
+// for(let i=1;i<=10;i++){
+//     b=4*i
+//     document.write("4X"+ i+"="+b+"<br>")
+// }
+  
+
+// arrys
+
+// let arry="this is a car"
+// let arr=arry.split(" ")
+// console.log(arr)
+
+
+// let arry ="Divya thapa";
+//  let reverse=arry.split("").reverse().join("");
+//  console.log(reverse)
+
+
+
+// let arry="Divya thapa";
+// reverse=" ";
+// for(let i =arry.length-1;i>=0;i--){
+//     reverse +=arry[i]
+
+// }
+//     console.log(reverse);
+
+
+
+// to add arry form start
+
+let arr=["apple","banana"]
+arr.push("mango")
+console.log(arr)
+// and how to add in start
+
+let addstart=["apple","banana","mango"]
+addstart.unshift("grapes")
+console.log(addstart)
+
+//remove arry form the last
+
+let removelast=["grapes","apple","banana","mango"]
+removelast.pop()
+console.log(removelast)
+
+// remove for the start
+let removeStart=["grapes","apple","banana"]
+removeStart.shift()
+console.log(removeStart)
+
+
+// to check the varibale is arrya or not
+
+let check=["apple","banaa"]
+console.log(Array.isArray(check))
+
+let checkb="apple"
+console.log(Array.isArray(checkb))
+
+// iterate over an array
+let furite=["apple","banna","mango"]
+for(let i=0;i<furite.length;i++){
+    console.log(furite[i])
+}
+
+// applay foEach method
+
+let method=["apple","banana","mango"]
+method.forEach((furit,index)=>{
+    console.log(`this is no ${index} and furite ${furit}`)
+})
+
+// how to concat
+ let furitenew=["apple","banaa"]
+ let morefurite=["mango"]
+ let allfurite=furitenew.concat(morefurite)
+ console.log(allfurite)
+
+
+//  how to print tha start
+
+for(let i=1;i<=5;i++){
+    for(j=1;j<=i;j++){
+       document.write("*")
+    }
+     document.write("<br>")
+}
+
+
+// for(let i=5;i>=1;i--){
+//     for(j=1;j<=i;j++){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+// }
+
+
+for(let i=1;i<=5;i++){
+    for(k=1;k<=5-i;k++){
+        document.write("&nbsp")
+    }
+    for(j=1;j<=i;j++){
+        document.write("*")
+
+    }
+    document.write("<br>")
+}
+
+
+// how to print the name in reverse
+let name =["Divya", "thapa"]
+ let reverse=" "
+
+ for(let i=name.length-1;i>=0;i--){
+    reverse+=name[i]
+ }
+  console.log(reverse)
+
+
+   
+
+
+
+
+    </script>
+
+    <script src="javascrpt.js"></script>
+</body>
+</html>
